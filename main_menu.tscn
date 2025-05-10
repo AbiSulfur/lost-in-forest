@@ -1,9 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://diwqgxts8q62v"]
+[gd_scene load_steps=5 format=3 uid="uid://diwqgxts8q62v"]
 
-[ext_resource type="Texture2D" uid="uid://bjegj01ki4bmg" path="res://Aset/Background/PNG/Cartoon_Forest_BG_04/Layers/Sky.png" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://cyjfeyp4d5bgp" path="res://Aset/e4fba522-e852-4072-9fd1-e8497d533258.png" id="1_7vrkn"]
+[ext_resource type="Texture2D" uid="uid://bjn0rkaqnr2ud" path="res://Aset/Cutscene/WhatsApp_Image_2025-04-22_at_09.08.57_e9da5b1c-removebg-preview.png" id="2_fu7sn"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rhts7"]
-texture = ExtResource("1_06t4h")
+texture = ExtResource("1_7vrkn")
 modulate_color = Color(0.779291, 0.779291, 0.779291, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
@@ -76,10 +77,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -579.0
-offset_top = 15.0
-offset_right = -230.0
-offset_bottom = 273.0
+offset_left = -131.0
+offset_top = 18.0
+offset_right = 135.0
+offset_bottom = 225.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 40
 text = "Lost
@@ -87,3 +88,8 @@ In
 Forest"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="WhatsAppImage2025-04-22At09_08_57E9Da5b1c-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(69, 76)
+scale = Vector2(0.282, 0.282)
+texture = ExtResource("2_fu7sn")
