@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cyjfeyp4d5bgp" path="res://Aset/e4fba522-e852-4072-9fd1-e8497d533258.png" id="1_7vrkn"]
 [ext_resource type="Script" uid="uid://5kgc4j4pk8io" path="res://main_menu.gd" id="1_jix8l"]
-[ext_resource type="Texture2D" uid="uid://bjn0rkaqnr2ud" path="res://Aset/Cutscene/WhatsApp_Image_2025-04-22_at_09.08.57_e9da5b1c-removebg-preview.png" id="2_fu7sn"]
 [ext_resource type="FontFile" uid="uid://c0mdw4u4i2tqa" path="res://Aset/font/Steelfish Bd.otf" id="2_jix8l"]
+[ext_resource type="Texture2D" uid="uid://ctxd62gum44od" path="res://Aset/image_2025-05-10_165541632-removebg-preview.png" id="4_jix8l"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rhts7"]
 texture = ExtResource("1_7vrkn")
@@ -133,9 +133,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="WhatsAppImage2025-04-22At09_08_57E9Da5b1c-removebg-preview" type="Sprite2D" parent="."]
-position = Vector2(69, 76)
+position = Vector2(79, 76)
 scale = Vector2(0.282, 0.282)
-texture = ExtResource("2_fu7sn")
+texture = ExtResource("4_jix8l")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
