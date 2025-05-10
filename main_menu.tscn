@@ -3,7 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://cyjfeyp4d5bgp" path="res://Aset/e4fba522-e852-4072-9fd1-e8497d533258.png" id="1_7vrkn"]
 [ext_resource type="Script" uid="uid://5kgc4j4pk8io" path="res://main_menu.gd" id="1_jix8l"]
 [ext_resource type="FontFile" uid="uid://c0mdw4u4i2tqa" path="res://Aset/font/Steelfish Bd.otf" id="2_jix8l"]
+main-menu
+[ext_resource type="Texture2D" uid="uid://ckrnji7es54be" path="res://Aset/logo.png" id="4_jix8l"]
 [ext_resource type="Texture2D" uid="uid://ctxd62gum44od" path="res://Aset/image_2025-05-10_165541632-removebg-preview.png" id="4_jix8l"]
+main
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rhts7"]
 texture = ExtResource("1_7vrkn")
