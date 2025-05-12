@@ -7,6 +7,9 @@ func _physics_process(delta):
 	velocity.x = direction * SPEED
 	move_and_slide()
 
-	# Membalik arah karakter saat ke kiri
+	# Ganti animasi tergantung gerak atau tidak
 	if direction != 0:
-		$Sprite2D.flip_h = direction < 0
+		$AnimatedSprite2D.play("walk")
+		$AnimatedSprite2D.flip_h = direction < 0
+	else:
+		$AnimatedSprite2D.play("idle")
