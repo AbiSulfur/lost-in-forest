@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://diwqgxts8q62v"]
 
 [ext_resource type="Texture2D" uid="uid://cyjfeyp4d5bgp" path="res://Aset/e4fba522-e852-4072-9fd1-e8497d533258.png" id="1_7vrkn"]
-[ext_resource type="Script" uid="uid://5kgc4j4pk8io" path="res://main_menu.gd" id="1_jix8l"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_jix8l"]
 [ext_resource type="Texture2D" uid="uid://bjn0rkaqnr2ud" path="res://Aset/Cutscene/WhatsApp_Image_2025-04-22_at_09.08.57_e9da5b1c-removebg-preview.png" id="2_fu7sn"]
 [ext_resource type="FontFile" uid="uid://c0mdw4u4i2tqa" path="res://Aset/font/Steelfish Bd.otf" id="2_jix8l"]
 
