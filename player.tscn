@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2s7r6ykj6v2j"]
+
+[ext_resource type="Texture2D" uid="uid://oy5vsu0j4nkj" path="res://Aset/Character/Villager_2/PNG/PNG Sequences/Idle/0_Villager_Idle_000.png" id="1_4flbx"]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(292, 263)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
