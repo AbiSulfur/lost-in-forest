@@ -2,6 +2,19 @@
 
 [ext_resource type="PackedScene" uid="uid://4jfbkn6e7ds5" path="res://player.tscn" id="1_ig7tw"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Main" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(69, 326)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(-16, -5)
