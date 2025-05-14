@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://c8kdhm3jt7qpi"]
 
 [ext_resource type="Script" path="res://intro.gd" id="1_ayt76"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://cxcc4258ryvu7"]
+
+[ext_resource type="Script" uid="uid://brm23cltxyy80" path="res://intro.gd" id="1_ayt76"]
+>>>>>>> Stashed changes
 [ext_resource type="VideoStream" uid="uid://b8ag81htfrie1" path="res://Aset/Cutscene/Prolog.ogv" id="2_7a8ye"]
 
 [node name="Control" type="Control"]
