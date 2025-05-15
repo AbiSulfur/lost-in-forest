@@ -3,11 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b0ch7riavcfjj"
-valid=false
+path="res://.godot/imported/Steelfish Bd It.otf-5a9ac6dbb3ba54455bd0b5bba3b516dc.fontdata"
 
 [deps]
 
 source_file="res://Aset/font/Steelfish Bd It.otf"
+dest_files=["res://.godot/imported/Steelfish Bd It.otf-5a9ac6dbb3ba54455bd0b5bba3b516dc.fontdata"]
 
 [params]
 

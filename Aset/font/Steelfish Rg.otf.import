@@ -3,11 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://fwl0dw1svb8x"
-valid=false
+path="res://.godot/imported/Steelfish Rg.otf-8cbcaeec0017f3bfd4d01b92e5fd758d.fontdata"
 
 [deps]
 
 source_file="res://Aset/font/Steelfish Rg.otf"
+dest_files=["res://.godot/imported/Steelfish Rg.otf-8cbcaeec0017f3bfd4d01b92e5fd758d.fontdata"]
 
 [params]
 

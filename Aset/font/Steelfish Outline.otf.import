@@ -3,11 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b42uauww2unjt"
-valid=false
+path="res://.godot/imported/Steelfish Outline.otf-f7a462beca78f45574f6f9dd2173a3da.fontdata"
 
 [deps]
 
 source_file="res://Aset/font/Steelfish Outline.otf"
+dest_files=["res://.godot/imported/Steelfish Outline.otf-f7a462beca78f45574f6f9dd2173a3da.fontdata"]
 
 [params]
 
