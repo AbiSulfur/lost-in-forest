@@ -3,12 +3,11 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://vco42b8bk3he"
-path="res://.godot/imported/Steelfish Eb It.otf-45c5aafb545623de1b2ec78bcee2a9d7.fontdata"
+valid=false
 
 [deps]
 
 source_file="res://Aset/font/Steelfish Eb It.otf"
-dest_files=["res://.godot/imported/Steelfish Eb It.otf-45c5aafb545623de1b2ec78bcee2a9d7.fontdata"]
 
 [params]
 
