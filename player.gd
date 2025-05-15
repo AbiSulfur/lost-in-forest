@@ -65,7 +65,19 @@ func handle_attack():
 
 func sword_attack():
 	is_attacking = true
-	can_attack = false
+	can_attack = false 
+
+	if not is_on_floor():
+		$AnimatedSprite2D.play("air_attack")
+	elif abs(velocity.x) > SPEED and Input.is_action_pressed("run"):
+		$AnimatedSprite2D.play("run_attack")
+	else:
+		$AnimatedSprite2D.play("attack_sword")
+
+	await get_tree().create_timer(ATTACK_COOLDOWN).timeout
+	is_attacking = false
+	can_attack = true
+
 
 	if not is_on_floor():
 		$AnimatedSprite2D.play("air_attack")
@@ -85,10 +97,15 @@ func throw_object():
 
 	if not is_on_floor():
 		$AnimatedSprite2D.play("air_throw")
-	elif abs(velocity.x) > SPEED:
+	elif abs(velocity.x) > SPEED and Input.is_action_pressed("run"):
 		$AnimatedSprite2D.play("run_throw")
 	else:
 		$AnimatedSprite2D.play("throw")
+
+	await get_tree().create_timer(THROW_COOLDOWN).timeout
+	is_attacking = false
+	can_throw = true
+
 
 	await get_tree().create_timer(THROW_COOLDOWN).timeout
 	is_attacking = false
@@ -100,16 +117,20 @@ func handle_animation():
 	if is_dead:
 		$AnimatedSprite2D.play("death")
 	elif is_attacking:
-		pass
+		pass  # Animasi serangan diatur di fungsi attack
 	elif not is_on_floor():
 		if velocity.y < 0:
 			$AnimatedSprite2D.play("jump")
 		else:
 			$AnimatedSprite2D.play("fall")
 	elif velocity.x != 0:
-		$AnimatedSprite2D.play("run")
+		if Input.is_action_pressed("run"):
+			$AnimatedSprite2D.play("run")  
+		else:
+			$AnimatedSprite2D.play("walk") 
 	else:
 		$AnimatedSprite2D.play("idle")
+
 
 # --- Fungsi Damage dan Mati ---
 func take_damage(amount):

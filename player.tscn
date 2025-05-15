@@ -173,6 +173,10 @@
 [ext_resource type="Texture2D" uid="uid://d1f5dsremqgsg" path="res://Aset/Character/Villager_2/PNG/PNG Sequences/Throwing/0_Villager_Throwing_010.png" id="117_gs2fc"]
 [ext_resource type="Texture2D" uid="uid://cukle6fx22ut6" path="res://Aset/Character/Villager_2/PNG/PNG Sequences/Throwing/0_Villager_Throwing_011.png" id="118_0icml"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i3pqv"]
+radius = 45.0
+height = 130.0
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_erdvr"]
 animations = [{
 "frames": [{
@@ -759,23 +763,20 @@ animations = [{
 "speed": 20.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i3pqv"]
-radius = 45.0
-height = 128.0
-
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_onrkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 108)
+shape = SubResource("CapsuleShape2D_i3pqv")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(2.99997, 111)
 scale = Vector2(0.217, 0.217)
 sprite_frames = SubResource("SpriteFrames_erdvr")
-animation = &"air_throw"
-frame = 11
-frame_progress = 1.0
+animation = &"fall"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, 117)
-shape = SubResource("CapsuleShape2D_i3pqv")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -139)
