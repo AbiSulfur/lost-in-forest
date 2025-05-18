@@ -1,6 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://c4hrkrysob3p8"]
+[gd_scene load_steps=15 format=3 uid="uid://c4hrkrysob3p8"]
 
 [ext_resource type="Texture2D" uid="uid://btmw4o4rdp3dg" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/BG_Decor.png" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://g4i60rptoifh" path="res://main.gd" id="1_5vw27"]
 [ext_resource type="Texture2D" uid="uid://c6pkg50gn71yh" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/Sky.png" id="1_272bh"]
 [ext_resource type="PackedScene" uid="uid://4jfbkn6e7ds5" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://dpuxcdskc2nx3" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/Foreground.png" id="2_lquwl"]
@@ -15046,7 +15047,7 @@ texture_region_size = Vector2i(35, 35)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c57u"]
 texture = ExtResource("6_kek77")
-texture_region_size = Vector2i(35, 48)
+texture_region_size = Vector2i(32, 40)
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -15067,6 +15068,8 @@ sources/3 = SubResource("TileSetAtlasSource_1bvp3")
 sources/4 = SubResource("TileSetAtlasSource_4c57u")
 
 [node name="Main" type="Node2D"]
+position = Vector2(0, 3)
+script = ExtResource("1_5vw27")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -15074,32 +15077,34 @@ sources/4 = SubResource("TileSetAtlasSource_4c57u")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(162.111, 318.313)
-scale = Vector2(0.620949, 0.620949)
+scale = Vector2(0.721, 0.721)
 texture = ExtResource("1_272bh")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(162.111, 318.313)
-scale = Vector2(0.620949, 0.620949)
+scale = Vector2(0.721, 0.721)
 texture = ExtResource("1_1bvp3")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2(162.111, 318.313)
-scale = Vector2(0.620949, 0.620949)
+scale = Vector2(0.721, 0.721)
 texture = ExtResource("3_5vw27")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
 position = Vector2(162.111, 318.313)
-scale = Vector2(0.620949, 0.620949)
+scale = Vector2(0.721, 0.721)
 texture = ExtResource("2_lquwl")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(228, 456)
+position = Vector2(133, 507)
 scale = Vector2(0.631449, 0.44206)
 tile_set = SubResource("TileSet_4c57u")
 format = 2
@@ -15111,6 +15116,8 @@ layer_2/name = "Layer2"
 position = Vector2(145, 463)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-209, 1)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(128, 59)
 polygon = PackedVector2Array(-450, 640, 742, 636, 148, 638)

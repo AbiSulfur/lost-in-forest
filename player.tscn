@@ -1,4 +1,4 @@
-[gd_scene load_steps=175 format=3 uid="uid://4jfbkn6e7ds5"]
+[gd_scene load_steps=181 format=3 uid="uid://4jfbkn6e7ds5"]
 
 [ext_resource type="Texture2D" uid="uid://oy5vsu0j4nkj" path="res://Aset/Character/Villager_2/PNG/PNG Sequences/Idle/0_Villager_Idle_000.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://ck55rmafroxyj" path="res://player.gd" id="1_onrkg"]
@@ -172,6 +172,10 @@
 [ext_resource type="Texture2D" uid="uid://dxs52xh2pec0" path="res://Aset/Character/Villager_2/PNG/PNG Sequences/Throwing/0_Villager_Throwing_009.png" id="116_qwp3d"]
 [ext_resource type="Texture2D" uid="uid://d1f5dsremqgsg" path="res://Aset/Character/Villager_2/PNG/PNG Sequences/Throwing/0_Villager_Throwing_010.png" id="117_gs2fc"]
 [ext_resource type="Texture2D" uid="uid://cukle6fx22ut6" path="res://Aset/Character/Villager_2/PNG/PNG Sequences/Throwing/0_Villager_Throwing_011.png" id="118_0icml"]
+[ext_resource type="Script" uid="uid://b3wvr4ax4hfyy" path="res://camera.gd" id="173_35mbo"]
+[ext_resource type="Script" uid="uid://bi78v0jk0e23o" path="res://health.gd" id="173_gs2fc"]
+[ext_resource type="Script" uid="uid://jeneripm2amt" path="res://hurt_box.gd" id="174_0icml"]
+[ext_resource type="Script" uid="uid://dwn2msdyitnt8" path="res://hit_box.gd" id="175_tkgbj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i3pqv"]
 radius = 45.0
@@ -763,11 +767,18 @@ animations = [{
 "speed": 20.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pedxo"]
+radius = 30.0
+height = 118.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kpsmw"]
+size = Vector2(89, 89)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_onrkg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-8, 108)
+position = Vector2(-2, 115)
 shape = SubResource("CapsuleShape2D_i3pqv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -776,7 +787,27 @@ shape = SubResource("CapsuleShape2D_i3pqv")
 position = Vector2(2.99997, 111)
 scale = Vector2(0.217, 0.217)
 sprite_frames = SubResource("SpriteFrames_erdvr")
-animation = &"fall"
+animation = &"idle"
+
+[node name="Health" type="Node" parent="."]
+script = ExtResource("173_gs2fc")
+
+[node name="Hurtbox" type="Area2D" parent="."]
+position = Vector2(0, -1)
+script = ExtResource("174_0icml")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, 117)
+shape = SubResource("CapsuleShape2D_pedxo")
+
+[node name="Hitbox" type="Area2D" parent="."]
+position = Vector2(0, -1)
+script = ExtResource("175_tkgbj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(102, 116.5)
+shape = SubResource("RectangleShape2D_kpsmw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -139)
+script = ExtResource("173_35mbo")
