@@ -1,9 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://c4hrkrysob3p8"]
+[gd_scene load_steps=14 format=3 uid="uid://c4hrkrysob3p8"]
 
 [ext_resource type="Texture2D" uid="uid://btmw4o4rdp3dg" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/BG_Decor.png" id="1_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://c6pkg50gn71yh" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/Sky.png" id="1_272bh"]
 [ext_resource type="PackedScene" uid="uid://4jfbkn6e7ds5" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://dpuxcdskc2nx3" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/Foreground.png" id="2_lquwl"]
+[ext_resource type="Texture2D" uid="uid://b826xcapvr82" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/Middle_Decor.png" id="3_5vw27"]
 [ext_resource type="Texture2D" uid="uid://cdvliwhwdnw2w" path="res://Aset/Background/PNG/Cartoon_Forest_BG_01/Layers/Ground.png" id="3_7mycd"]
+[ext_resource type="Texture2D" uid="uid://pwemj363pqsc" path="res://Aset/Forest of Illusion Files/Layers/tiles.png" id="6_kek77"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
 texture = ExtResource("1_1bvp3")
@@ -15041,12 +15044,27 @@ texture_region_size = Vector2i(35, 35)
 52:29/0 = 0
 53:29/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4c57u"]
+texture = ExtResource("6_kek77")
+texture_region_size = Vector2i(35, 48)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_4c57u"]
 tile_size = Vector2i(35, 35)
 sources/0 = SubResource("TileSetAtlasSource_272bh")
 sources/1 = SubResource("TileSetAtlasSource_5vw27")
 sources/2 = SubResource("TileSetAtlasSource_kek77")
 sources/3 = SubResource("TileSetAtlasSource_1bvp3")
+sources/4 = SubResource("TileSetAtlasSource_4c57u")
 
 [node name="Main" type="Node2D"]
 
@@ -15055,7 +15073,30 @@ sources/3 = SubResource("TileSetAtlasSource_1bvp3")
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(0, 4)
+position = Vector2(162.111, 318.313)
+scale = Vector2(0.620949, 0.620949)
+texture = ExtResource("1_272bh")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(162.111, 318.313)
+scale = Vector2(0.620949, 0.620949)
+texture = ExtResource("1_1bvp3")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(162.111, 318.313)
+scale = Vector2(0.620949, 0.620949)
+texture = ExtResource("3_5vw27")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(162.111, 318.313)
+scale = Vector2(0.620949, 0.620949)
+texture = ExtResource("2_lquwl")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(228, 456)

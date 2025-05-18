@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bggtiwfqt2ykl"
-path="res://.godot/imported/Assets_source.png-d7d07f5089edec8072c130f21ac74457.ctex"
+uid="uid://e36lhdx1tnuu"
+path="res://.godot/imported/Previewx3.png-849b9ecbe476569a44b3e30fee0fce8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Aset/Object and Tree/PNG/Assets_source.png"
-dest_files=["res://.godot/imported/Assets_source.png-d7d07f5089edec8072c130f21ac74457.ctex"]
+source_file="res://Aset/Forest of Illusion Files/Previews/Previewx3.png"
+dest_files=["res://.godot/imported/Previewx3.png-849b9ecbe476569a44b3e30fee0fce8c.ctex"]
 
 [params]
 
