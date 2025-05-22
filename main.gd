@@ -21,8 +21,8 @@ func _ready():
 func setup_parallax_layers():
 	var parallax_bg = $ParallaxBackground
 	
-	# Nonaktifkan motion_mirroring
-	for i in range(1, 5):
+	# Hanya setup layer 1, 2, dan 3
+	for i in range(1, 4):  # Hanya sampai 3
 		var layer_name = "ParallaxLayer"
 		if i > 1:
 			layer_name += str(i)
@@ -38,6 +38,8 @@ func setup_parallax_layers():
 			
 			# Duplikasi sprite untuk menutupi seluruh area yang mungkin terlihat
 			ensure_full_coverage(layer, motion_scale)
+	
+	# Layer 4 tidak disentuh sama sekali - biarkan apa adanya
 
 func ensure_full_coverage(layer, motion_scale):
 	var sprite = layer.get_node("Sprite2D")

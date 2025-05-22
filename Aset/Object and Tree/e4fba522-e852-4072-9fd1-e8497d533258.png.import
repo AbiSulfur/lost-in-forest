@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqpkyynop4kuj"
-path="res://.godot/imported/back.png-a160f7f70b89c109dd6022da51039be2.ctex"
+uid="uid://cyjfeyp4d5bgp"
+path="res://.godot/imported/e4fba522-e852-4072-9fd1-e8497d533258.png-96a1ab4dd1262c745bac2c7667e24b51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Aset/Forest of Illusion Files/Layers/back.png"
-dest_files=["res://.godot/imported/back.png-a160f7f70b89c109dd6022da51039be2.ctex"]
+source_file="res://Aset/Object and Tree/e4fba522-e852-4072-9fd1-e8497d533258.png"
+dest_files=["res://.godot/imported/e4fba522-e852-4072-9fd1-e8497d533258.png-96a1ab4dd1262c745bac2c7667e24b51.ctex"]
 
 [params]
 

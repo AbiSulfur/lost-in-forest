@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 # --- Variables and Constants ---
-const SPEED = 100
+const SPEED = 130
 const RUN_MULTIPLIER = 1.5
 const JUMP_FORCE = -300
 const GRAVITY = 800

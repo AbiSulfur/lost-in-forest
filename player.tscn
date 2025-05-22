@@ -772,7 +772,7 @@ radius = 30.0
 height = 118.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kpsmw"]
-size = Vector2(89, 89)
+size = Vector2(81, 78.875)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_onrkg")
@@ -805,7 +805,7 @@ position = Vector2(0, -1)
 script = ExtResource("175_tkgbj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2(102, 116.5)
+position = Vector2(87, 138)
 shape = SubResource("RectangleShape2D_kpsmw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
